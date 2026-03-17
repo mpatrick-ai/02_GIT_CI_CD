@@ -43,3 +43,17 @@ git push -u origin main
 #### Hints
 
 - Feature sollte niemals auf ein main branch gebracht werden, ohne durch ein Review gelaufen zu sein!
+
+## Merge Konflikte beheben
+- Häufig entwickelt man in der selben Datei und läuft dann in sogenannte Merge-Konflikte
+- Ausgang: feature-branch kann nicht auf main gemerged werden, da Konflikt das blockiert
+
+### Einfachen Optionen um Merge-Koflikte zu beheben
+1. lokal (in VSCode)
+2. `git checkout main` und dann die letzten Änderungen mit `git pull` ziehen
+3. Zurück auf feature Branch mit `git checkout <feature-branch>`
+4. `git merge again`
+5. Merge Konflikte beheben (`Incoming` oder `Current` Change Accepten)
+6. Merge resolve pushen
+7. Prüfen ob gemerged werden kann
+8. Mergen
